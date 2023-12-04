@@ -1,27 +1,19 @@
 {% extends "base.html" %} 
 {% load static %}
 
+
 {% block scripts  %}
-<script > 
-
-   console.log ('holiiiii')
-
-const video = document.getElementById('video-element')
-
-
-if (navigator.mediaDevices.getUserMedia){
-    navigator.mediaDevices.getUserMedia ({video: true})
-    .then ((stream)=>{
-        video.srcObject = stream
-    })
-}
-</script>
+<script src=" {% static 'login.js' %}" defer> </script>
 {% endblock scripts  %}
 
  {% block content %}
- 
+ <div class ="text-center">
  <video autoplay= "true" id= "video-element"></video>
+ </div>
 
+
+ <div id="img-element"></div>
+ 
  <div class= "text-center mt-3">
     <button class="btn btn-primary" id= "capture-btn">tomar foto</button>
     <button class="btn btn-info" id= "reload-btn">recargar</button>

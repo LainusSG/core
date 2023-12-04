@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'logs',
 ]
 
+LOGIN_URL='Login/'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -122,7 +124,7 @@ STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 
 
-STATICFILES_DIR = [BASE_DIR / 'static']
+STATICFILES_DIRS = [BASE_DIR / 'static']
 MEDIA_ROOT = BASE_DIR / 'media'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
