@@ -1,3 +1,5 @@
+console.log('hello world')
+
 const getCookie = (name) => {
     let cookieValue = null;
     if (document.cookie && document.cookie !== '') {
